@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  background-color: #ffffff;
+}
+
+.product-page {
+  padding: 60px 20px;
+}
+.product-card {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.product-card__image img {
+  width: 450px;
+  display: block;
+  border-radius: 10px;
+}
+.product-card__image {
+  padding: 25px;
+  background-color: #f7f7f2;
+  border-radius: 12px;
+}
+.product-card__content {
+  width: 500px;
+}
+
+.product-card__category {
+  font-size: 15px;
+  color: #777;
+}
+
+.product-card__title {
+  font-size: 36px;
+  margin: 10px 0 25px;
+}
+
+.product-card__sizes-title,
+.product-card__article {
+  font-size: 16px;
+}
+
+.product-card__description {
+  font-size: 16px;
+  line-height: 24px;
+  width: 420px;
+}
+
+.product-card__sizes-list {
+  display: flex;
+  gap: 10px;
+}
+
+.product-card__size {
+  padding: 10px 14px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.product-card__size--active {
+  background-color: #e7f2bd;
+  border-color: #9dbb45;
+}
+.product-card__price {
+  margin-bottom: 20px;
+}
+
+#old-price {
+  margin-right: 10px;
+  color: #777;
+  text-decoration: line-through;
+}
+
+#price {
+  font-size: 24px;
+  color: #e53935;
+}
+.product-card__button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+}
+
+.product-card__button:hover {
+  background-color: #6f8f2f;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product-card__image {
+    width: 100%;
+  }
+
+  .product-card__image img {
+    width: 100%;
+  }
+
+  .product-card__content {
+    width: 100%;
+  }
+
+  .product-card__description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .product-page {
+    padding: 30px 15px;
+  }
+
+  .product-card__image {
+    padding: 15px;
+  }
+
+  .product-card__title {
+    font-size: 28px;
+  }
+
+  .product-card__sizes-list {
+    flex-wrap: wrap;
+  }
+}
